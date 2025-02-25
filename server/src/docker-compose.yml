@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft
+    ports:
+      - "25565:25565"
+    environment:
+      MEMORY: "4G"
+      TZ: "CET"
+      ENABLE_ROLLING_LOGS: "TRUE"
+      USE_AIKAR_FLAGS: "FALSE"
+
+      EULA: "TRUE"
+      VERSION: "1.20.1"
+      TYPE: "FABRIC"
+      ONLINE_MODE: "FALSE"
+      SERVER_NAME: "therapists & the-rapists"
+
+      DIFFICULTY: "HARD"
+      MAX_PLAYERS: "100"
+      MODE: "SURVIVAL"
+      FORCE_GAMEMODE: "TRUE"
+      MAX_BUILD_HEIGHT: "512" # default 256
+      VIEW_DISTANCE: "16" # radius in chunks
+      SIMULATION_DISTANCE: "10" # radius in chunks
+      SEED: "-1" # random seed
+      EXEC_DIRECTLY: "FALSE" # attach directly to server console
+      STOP_SERVER_ANNOUNCE_DELAY: "30" # seconds
+    volumes:
+      - ./../data:/data
+    restart: on-failure:3
