@@ -8,7 +8,7 @@ services:
       - "25565:25565"
     environment:
       MAX_MEMORY: "10G"
-      INIT_MEMORY: "2G"
+      INIT_MEMORY: "1G"
       TZ: "CET"
       ENABLE_ROLLING_LOGS: "TRUE"
       USE_AIKAR_FLAGS: "TRUE"
@@ -18,6 +18,7 @@ services:
       TYPE: "FABRIC"
       ONLINE_MODE: "FALSE"
       SERVER_NAME: "therapists & the-rapists"
+      MOTD: "therapists & the-rapists"
 
       DIFFICULTY: "HARD"
       MAX_PLAYERS: "100"
@@ -25,8 +26,8 @@ services:
       FORCE_GAMEMODE: "TRUE"
       MAX_BUILD_HEIGHT: "512" # default 256
       VIEW_DISTANCE: "26" # radius in chunks
-      SIMULATION_DISTANCE: "12" # radius in chunks
-      SEED: "626244332105376699"
+      SIMULATION_DISTANCE: "10" # radius in chunks
+      SEED: "7840019800600194570"
       EXEC_DIRECTLY: "FALSE" # attach directly to server console
       STOP_SERVER_ANNOUNCE_DELAY: "30" # seconds
     volumes:
