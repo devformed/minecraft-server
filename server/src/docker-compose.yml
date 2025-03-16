@@ -30,6 +30,32 @@ services:
       SEED: "7840019800600194570"
       EXEC_DIRECTLY: "FALSE" # attach directly to server console
       STOP_SERVER_ANNOUNCE_DELAY: "30" # seconds
+
+      ENABLE_RCON: true
+      RCON_PORT: 25575
+      RCON_PASSWORD: ${RCON_PASSWORD}
+      # RCON_CMDS_STARTUP:
     volumes:
       - ./../data:/data
     restart: on-failure:1
+
+  # https://github.com/itzg/docker-mc-backup
+  backups:
+    image: itzg/mc-backup:latest
+    depends_on:
+      - minecraft
+    environment:
+      BACKUP_INTERVAL: 1h
+      PRUNE_BACKUPS_COUNT: 12
+      # PRUNE_BACKUPS_DAYS: 3
+
+      RCON_HOST: minecraft
+      RCON_PORT: 25575
+      RCON_PASSWORD: ${RCON_PASSWORD}
+      PAUSE_IF_NO_PLAYER: "true"
+      PLAYERS_ONLINE_CHECK_INTERVAL: 5m
+      TZ: Europe/Warsaw
+      DEST_DIR: /backups
+    volumes:
+      - ./../data:/data
+      - ./../backups:/backups
