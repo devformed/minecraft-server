@@ -3,7 +3,7 @@ import sys
 from typing import List
 
 
-def build_exe(script_path: str) -> None:
+def build_executable(script_path: str) -> None:
     """
     Compiles specified python script into .exe using PyInstaller.
     """
@@ -20,12 +20,12 @@ def build_exe(script_path: str) -> None:
     try:
         subprocess.run(command, check=True)
     except subprocess.CalledProcessError as e:
-        print("Error during creation of exe:", e)
+        print("Error during creation of executable:", e)
         sys.exit(1)
 
 def main(file_name: str) -> None:
     print("Building executable...")
-    build_exe(file_name)
+    build_executable(file_name)
     print("Finished!")
 
 
