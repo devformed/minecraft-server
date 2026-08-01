@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "minecraft": "26.2",
+  "loader": "fabric",
+  "resolvedAt": "2026-08-01",
+  "entries": [
+    {
+      "requested": "Enderman Overhaul",
+      "status": "unavailable",
+      "reason": "No official release explicitly supports Minecraft 26.2; the latest listed Minecraft line is 1.21.1.",
+      "projectUrl": "https://modrinth.com/mod/enderman-overhaul"
+    },
+    {
+      "requested": "From The Fog",
+      "status": "unavailable",
+      "reason": "No official release explicitly supports Minecraft 26.2; the latest listed Minecraft line is 1.21.10.",
+      "projectUrl": "https://modrinth.com/mod/from-the-fog"
+    },
+    {
+      "requested": "Blossom Blade",
+      "status": "unavailable",
+      "reason": "No official release explicitly supports Minecraft 26.2; the latest listed Minecraft line is 1.21.1.",
+      "projectUrl": "https://modrinth.com/datapack/blossom-blade"
+    },
+    {
+      "requested": "Naturalist",
+      "status": "unavailable",
+      "reason": "No official release explicitly supports Minecraft 26.2; the latest listed Minecraft line is 1.21.1.",
+      "projectUrl": "https://modrinth.com/mod/naturalist"
+    },
+    {
+      "requested": "Ribbits",
+      "status": "unavailable",
+      "reason": "No official release explicitly supports Minecraft 26.2; the latest listed Minecraft line is 1.21.1.",
+      "projectUrl": "https://modrinth.com/mod/ribbits"
+    },
+    {
+      "requested": "AI Improvements",
+      "status": "loader-mismatch",
+      "reason": "The official Minecraft 26.2 build is NeoForge-only; no Fabric artifact exists.",
+      "projectUrl": "https://modrinth.com/mod/ai-improvements"
+    },
+    {
+      "requested": "Connectible Chains",
+      "status": "replaced",
+      "reason": "The original project is archived and stops at Minecraft 1.21.11.",
+      "projectUrl": "https://modrinth.com/mod/connectiblechains",
+      "replacement": "Reconnectible Chains",
+      "replacementUrl": "https://modrinth.com/mod/reconnectible-chains"
+    },
+    {
+      "requested": "Eating Animation",
+      "status": "replaced",
+      "reason": "The original project stops at Minecraft 1.21.3.",
+      "projectUrl": "https://modrinth.com/mod/eating-animation",
+      "replacement": "Eating Animation Fork",
+      "replacementUrl": "https://modrinth.com/mod/eating-animation-fork"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Materialized or runtime files
+build/
+.minecraft/
+*.jar
+*.part
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Minecraft runtime state
+logs/
+crash-reports/
+saves/
+options.txt
+servers.dat
+
+# OS/editor noise
+.DS_Store
