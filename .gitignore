@@ -15,5 +15,12 @@ saves/
 options.txt
 servers.dat
 
+# Docker server runtime and secrets
+server/.env
+server/data/
+server/backups/
+server/restore/
+server/secrets/*.txt
+
 # OS/editor noise
 .DS_Store

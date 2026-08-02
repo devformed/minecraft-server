@@ -1,0 +1,94 @@
+name: devformed-minecraft-26-2
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:2026.7.2-java25@sha256:6ec1110e4d9236d00ae9436a3e4a5929583e5b19cc94b756a7c603f7cf647a77
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    ports:
+      - "${SERVER_PORT:-25565}:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "26.2"
+      FABRIC_LOADER_VERSION: "0.19.3"
+      FABRIC_LAUNCHER_VERSION: "1.1.2"
+      REMOVE_OLD_MODS: "TRUE"
+
+      MEMORY: "${MEMORY:-6G}"
+      USE_AIKAR_FLAGS: "TRUE"
+      ENABLE_ROLLING_LOGS: "true"
+      TZ: "Europe/Warsaw"
+
+      ONLINE_MODE: "${ONLINE_MODE:-TRUE}"
+      SERVER_NAME: "${SERVER_NAME:-Devformed Fabric 26.2}"
+      MOTD: "${MOTD:-Devformed Fabric 26.2}"
+      DIFFICULTY: "${DIFFICULTY:-HARD}"
+      MODE: "SURVIVAL"
+      FORCE_GAMEMODE: "TRUE"
+      MAX_PLAYERS: "${MAX_PLAYERS:-20}"
+      VIEW_DISTANCE: "${VIEW_DISTANCE:-12}"
+      SIMULATION_DISTANCE: "${SIMULATION_DISTANCE:-10}"
+      SEED: "${SEED:-7840019800600194570}"
+      STOP_SERVER_ANNOUNCE_DELAY: "30"
+
+      ENABLE_RCON: "TRUE"
+      RCON_PORT: "25575"
+      RCON_PASSWORD_FILE: "/run/secrets/rcon_password"
+    secrets:
+      - rcon_password
+    volumes:
+      - ./data:/data
+      - ../build/server/mods:/mods:ro
+    healthcheck:
+      test: ["CMD", "mc-health"]
+      start_period: 2m
+      interval: 30s
+      retries: 2
+    stop_grace_period: 2m
+
+  backups:
+    image: itzg/mc-backup:2026.7.3@sha256:e1b9133777e99fe58be14690a4c93c8053efdc49e3f69fc67b0932b666ee2e33
+    hostname: minecraft-26-2-backup
+    restart: unless-stopped
+    depends_on:
+      minecraft:
+        condition: service_healthy
+    environment:
+      BACKUP_METHOD: "restic"
+      BACKUP_INTERVAL: "${BACKUP_INTERVAL:-6h}"
+      BACKUP_ON_STARTUP: "TRUE"
+      INITIAL_DELAY: "0"
+
+      RCON_HOST: "minecraft"
+      RCON_PORT: "25575"
+      RCON_PASSWORD_FILE: "/run/secrets/rcon_password"
+      ENABLE_SAVE_ALL: "TRUE"
+      ENABLE_SYNC: "TRUE"
+
+      RESTIC_REPOSITORY: "/backups"
+      RESTIC_PASSWORD_FILE: "/run/secrets/restic_password"
+      RESTIC_HOSTNAME: "minecraft-26-2"
+      BACKUP_NAME: "world"
+      RESTIC_ADDITIONAL_TAGS: "mc_backups fabric-26.2"
+      RESTIC_RETRY_LOCK: "5m"
+      PRUNE_RESTIC_RETENTION: >-
+        --keep-within 48h
+        --keep-daily 14
+        --keep-weekly 8
+        --keep-monthly 12
+      TZ: "Europe/Warsaw"
+    secrets:
+      - rcon_password
+      - restic_password
+    volumes:
+      - ./data:/data:ro
+      - ./backups/restic:/backups
+      - ./restore:/restore
+
+secrets:
+  rcon_password:
+    file: ./secrets/rcon-password.txt
+  restic_password:
+    file: ./secrets/restic-password.txt

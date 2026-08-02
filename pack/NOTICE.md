@@ -16,9 +16,19 @@ The repository and the generated `.mrpack` do not contain third-party mod JARs. 
 | Catalogue | 1.12.3 | requested | MIT | [GitHub](https://github.com/MrCrayfish/Catalogue/releases/tag/v1.12.3%2B26.2) |
 | Dark Paintings | 26.2.0.1 | requested | LGPL-2.1-only | [Modrinth](https://modrinth.com/mod/dark-paintings/version/aymsGrDY) |
 | Variants&Ventures | 1.0.26 | requested | CC-BY-NC-ND-4.0 | [Modrinth](https://modrinth.com/mod/variants-and-ventures/version/dOfY3eZf) |
-| I'm Fast | 1.0.3 | requested | MIT | [Modrinth](https://modrinth.com/mod/im-fast/version/nD5sET2x) |
 | Freecam | 1.4.1-beta.3 | requested | MIT | [Modrinth](https://modrinth.com/mod/freecam/version/pps2kBUB) |
 | Better Than Mending | 2.3.0 | requested | LGPL-3.0-only | [Modrinth](https://modrinth.com/mod/better-than-mending/version/SydvTww2) |
+| Bobby | 5.2.15+mc26.2 | requested | LGPL-3.0-only | [Modrinth](https://modrinth.com/mod/bobby) |
+| Sodium | mc26.2-0.9.1-fabric | requested | LicenseRef-Polyform-Shield-1.0.0 | [Modrinth](https://modrinth.com/mod/sodium) |
+| ImmediatelyFast | 1.16.2+26.2-fabric | requested | LGPL-3.0-or-later | [Modrinth](https://modrinth.com/mod/immediatelyfast) |
+| FerriteCore | 9.0.0-fabric | requested | MIT | [Modrinth](https://modrinth.com/mod/ferrite-core) |
+| Lithium | mc26.2-0.25.3-fabric | requested | LGPL-3.0-only | [Modrinth](https://modrinth.com/mod/lithium) |
+| Entity Culling | 1.10.5 | requested | LicenseRef-tr7zw-Protective-License | [Modrinth](https://modrinth.com/mod/entityculling) |
+| More Culling | 1.8.0 | requested | GPL-3.0-only | [Modrinth](https://modrinth.com/mod/moreculling) |
+| Fast Noise | 1.0.39+26.2 | requested | MPL-2.0 | [Modrinth](https://modrinth.com/mod/zfastnoise) |
+| Chunky | 1.5.3 | requested | GPL-3.0-only | [Modrinth](https://modrinth.com/plugin/chunky) |
+| ScalableLux | 0.2.1+fabric.2b08348 | requested | LGPL-3.0-only | [Modrinth](https://modrinth.com/mod/scalablelux) |
+| Concurrent Chunk Management Engine | 0.4.1-beta.1.0+26.2 | requested | MIT | [Modrinth](https://modrinth.com/mod/c2me-fabric) |
 | Fabric API | 0.156.0 | dependency | Apache-2.0 | [Modrinth](https://modrinth.com/mod/fabric-api/version/3gT0I5vt) |
 | Cloth Config | 26.2.155 | dependency | LGPL-3.0-only | [Modrinth](https://modrinth.com/mod/cloth-config/version/Nv3xnWXd) |
 | Fusion | 1.3.12 | dependency | All Rights Reserved | [Modrinth](https://modrinth.com/mod/fusion-connected-textures/version/N8OknjCW) |

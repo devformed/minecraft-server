@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "name": "Devformed Fabric 26.2",
-  "versionId": "1.0.0+mc26.2-fabric",
-  "summary": "Minecraft 26.2 Fabric pack with 13 requested mods, 2 maintained replacements, and 7 required dependencies.",
-  "resolvedAt": "2026-08-01T21:32:07Z",
+  "versionId": "1.1.0+mc26.2-fabric",
+  "summary": "Minecraft 26.2 Fabric pack with 23 requested mods, 2 maintained replacements, and 7 required dependencies.",
+  "resolvedAt": "2026-08-02T08:27:11Z",
   "runtime": {
     "minecraft": "26.2",
     "java": 25,
@@ -20,10 +20,10 @@
     ]
   },
   "counts": {
-    "requested": 13,
+    "requested": 23,
     "replacements": 2,
     "dependencies": 7,
-    "totalFiles": 22
+    "totalFiles": 32
   },
   "artifacts": [
     {
@@ -378,33 +378,6 @@
       ]
     },
     {
-      "name": "I'm Fast",
-      "modId": "imfast",
-      "kind": "requested",
-      "requestedAs": "I'm Fast",
-      "version": "1.0.3",
-      "versionType": "release",
-      "path": "mods/imfast-FABRIC-26.2-1.0.3.jar",
-      "env": {
-        "client": "unsupported",
-        "server": "required"
-      },
-      "provider": "modrinth",
-      "projectId": "PaUMOeP0",
-      "versionId": "nD5sET2x",
-      "projectUrl": "https://modrinth.com/mod/im-fast",
-      "versionUrl": "https://modrinth.com/mod/im-fast/version/nD5sET2x",
-      "downloadUrl": "https://cdn.modrinth.com/data/PaUMOeP0/versions/nD5sET2x/imfast-FABRIC-26.2-1.0.3.jar",
-      "fileSize": 3133,
-      "hashes": {
-        "sha1": "5ca24d8b284566ed214f53c08877616b4837d62a",
-        "sha512": "664606eb41dbf13385ec82545c30a7b118bd263393325c29a6a6eef6e0a390555c194e0c15df64c18d7f477344c423e518e67b481d5c9171fd5c7fb36795341b"
-      },
-      "license": "MIT",
-      "requires": [],
-      "notes": "Server-only; excluded from client materialization and included in server materialization."
-    },
-    {
       "name": "Freecam",
       "modId": "freecam",
       "kind": "requested",
@@ -460,6 +433,303 @@
       "requires": [
         "fabric-api"
       ]
+    },
+    {
+      "name": "Bobby",
+      "modId": "bobby",
+      "kind": "requested",
+      "requestedAs": "Bobby",
+      "version": "5.2.15+mc26.2",
+      "versionType": "release",
+      "path": "mods/bobby-5.2.15+mc26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "M08ruV16",
+      "versionId": "KLiFVFju",
+      "projectUrl": "https://modrinth.com/mod/bobby",
+      "versionUrl": "https://modrinth.com/mod/bobby/version/KLiFVFju",
+      "downloadUrl": "https://cdn.modrinth.com/data/M08ruV16/versions/KLiFVFju/bobby-5.2.15%2Bmc26.2.jar",
+      "fileSize": 867357,
+      "hashes": {
+        "sha1": "7acb26634632894b95ef09c06503c7cc8f04b90b",
+        "sha512": "25261b02b2db7f969de5c7013b7e223508a9e6005d61f287911af30c0fecd06c40df1e3cb4d6f7b714093f6b8ecffb5dfba25726c370ef3a0a74dcebf7711631"
+      },
+      "license": "LGPL-3.0-only",
+      "requires": [],
+      "notes": "Client-side cache for full server-sent chunks beyond the server view distance."
+    },
+    {
+      "name": "Sodium",
+      "modId": "sodium",
+      "kind": "requested",
+      "requestedAs": "Sodium",
+      "version": "mc26.2-0.9.1-fabric",
+      "versionType": "release",
+      "path": "mods/sodium-fabric-0.9.1+mc26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "AANobbMI",
+      "versionId": "2Yom1N68",
+      "projectUrl": "https://modrinth.com/mod/sodium",
+      "versionUrl": "https://modrinth.com/mod/sodium/version/2Yom1N68",
+      "downloadUrl": "https://cdn.modrinth.com/data/AANobbMI/versions/2Yom1N68/sodium-fabric-0.9.1%2Bmc26.2.jar",
+      "fileSize": 1834384,
+      "hashes": {
+        "sha1": "14f3388694fa77f870d28262f74562de67eabcbe",
+        "sha512": "627fbf9625a4b94693c789c84a0686ffe558c0b1ecbeccf2602a903caafa9e126548b644282aa9c391dc798930d378724a383bea6b4397c5294d59ba5c0a6936"
+      },
+      "license": "LicenseRef-Polyform-Shield-1.0.0",
+      "requires": []
+    },
+    {
+      "name": "ImmediatelyFast",
+      "modId": "immediatelyfast",
+      "kind": "requested",
+      "requestedAs": "ImmediatelyFast",
+      "version": "1.16.2+26.2-fabric",
+      "versionType": "release",
+      "path": "mods/ImmediatelyFast-Fabric-1.16.2+26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "5ZwdcRci",
+      "versionId": "uJHxuQxy",
+      "projectUrl": "https://modrinth.com/mod/immediatelyfast",
+      "versionUrl": "https://modrinth.com/mod/immediatelyfast/version/uJHxuQxy",
+      "downloadUrl": "https://cdn.modrinth.com/data/5ZwdcRci/versions/uJHxuQxy/ImmediatelyFast-Fabric-1.16.2%2B26.2.jar",
+      "fileSize": 91422,
+      "hashes": {
+        "sha1": "2d1cd27b0b570f908b665c02a35b49381b4c5ec1",
+        "sha512": "5f7c9d7993bfe3654b4f384c23afd83c1adcc359b1fa669b20f29ffa41e4e3135a161c1fdf97c66c5fc513ec5fe63e757a46b6e183b7b93148a28412496c5a0b"
+      },
+      "license": "LGPL-3.0-or-later",
+      "requires": [],
+      "notes": "Kept on defaults; the 26.2 release enables its Apple GPU buffer-upload fix automatically."
+    },
+    {
+      "name": "FerriteCore",
+      "modId": "ferritecore",
+      "kind": "requested",
+      "requestedAs": "FerriteCore",
+      "version": "9.0.0-fabric",
+      "versionType": "release",
+      "path": "mods/ferritecore-9.0.0-fabric.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "uXXizFIs",
+      "versionId": "d5ddUdiB",
+      "projectUrl": "https://modrinth.com/mod/ferrite-core",
+      "versionUrl": "https://modrinth.com/mod/ferrite-core/version/d5ddUdiB",
+      "downloadUrl": "https://cdn.modrinth.com/data/uXXizFIs/versions/d5ddUdiB/ferritecore-9.0.0-fabric.jar",
+      "fileSize": 72677,
+      "hashes": {
+        "sha1": "eac76ff0f3753422c61b2c44487d0d195d88d4bc",
+        "sha512": "d81fa97e11784c19d42f89c2f433831d007603dd7193cee45fa177e4a6a9c52b384b198586e04a0f7f63cd996fed713322578bde9a8db57e1188854ae5cbe584"
+      },
+      "license": "MIT",
+      "requires": []
+    },
+    {
+      "name": "Lithium",
+      "modId": "lithium",
+      "kind": "requested",
+      "requestedAs": "Lithium",
+      "version": "mc26.2-0.25.3-fabric",
+      "versionType": "release",
+      "path": "mods/lithium-fabric-0.25.3+mc26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "gvQqBUqZ",
+      "versionId": "f7vZ0VWU",
+      "projectUrl": "https://modrinth.com/mod/lithium",
+      "versionUrl": "https://modrinth.com/mod/lithium/version/f7vZ0VWU",
+      "downloadUrl": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/f7vZ0VWU/lithium-fabric-0.25.3%2Bmc26.2.jar",
+      "fileSize": 912850,
+      "hashes": {
+        "sha1": "435ad0289209bb72195e7a423756a03f5dfa5a9a",
+        "sha512": "148b638f3c6229fbaf487120a2344a0af5e411a5aa6533d5db9d75da0a8c0d8304f63eb4cca13f4d03b2c9b4c23d559dd74c1d832422ef8a3087bd005e62a8bd"
+      },
+      "license": "LGPL-3.0-only",
+      "requires": []
+    },
+    {
+      "name": "Entity Culling",
+      "modId": "entityculling",
+      "kind": "requested",
+      "requestedAs": "Entity Culling",
+      "version": "1.10.5",
+      "versionType": "release",
+      "path": "mods/entityculling-fabric-1.10.5-mc26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "NNAgCjsB",
+      "versionId": "iiF6U3Ne",
+      "projectUrl": "https://modrinth.com/mod/entityculling",
+      "versionUrl": "https://modrinth.com/mod/entityculling/version/iiF6U3Ne",
+      "downloadUrl": "https://cdn.modrinth.com/data/NNAgCjsB/versions/iiF6U3Ne/entityculling-fabric-1.10.5-mc26.2.jar",
+      "fileSize": 1583775,
+      "hashes": {
+        "sha1": "f66f9d8cbb1f76466aaf45e46fb11b18207e3aef",
+        "sha512": "338813c344a2d924abbaaf249da2b52f5e162bd92407f3099c6ff1bce1c1efecde9df80efcc7b4de3b3a0044cc5735b96594b04da4594bb26793459fc6c960a6"
+      },
+      "license": "LicenseRef-tr7zw-Protective-License",
+      "requires": [
+        "fabric-api"
+      ]
+    },
+    {
+      "name": "More Culling",
+      "modId": "moreculling",
+      "kind": "requested",
+      "requestedAs": "More Culling",
+      "version": "1.8.0",
+      "versionType": "release",
+      "path": "mods/moreculling-fabric-26.2-1.8.0.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "51shyZVL",
+      "versionId": "SYFaYeMK",
+      "projectUrl": "https://modrinth.com/mod/moreculling",
+      "versionUrl": "https://modrinth.com/mod/moreculling/version/SYFaYeMK",
+      "downloadUrl": "https://cdn.modrinth.com/data/51shyZVL/versions/SYFaYeMK/moreculling-fabric-26.2-1.8.0.jar",
+      "fileSize": 364530,
+      "hashes": {
+        "sha1": "6a2ae8fa02102f078657f02fd70b2d34c66ae898",
+        "sha512": "d7e52db2c4214bd13a5e8ef9e7e6e84312d991847525fa9827cd0fac9385e32e7ab5bdc9062a3daa68c901629bd7ad390d3713139191734bb2e753fef12fbe1c"
+      },
+      "license": "GPL-3.0-only",
+      "requires": [
+        "cloth-config"
+      ],
+      "notes": "Configured to avoid aggressive culling of modded blocks such as Connected Glass."
+    },
+    {
+      "name": "Fast Noise",
+      "modId": "zfastnoise",
+      "kind": "requested",
+      "requestedAs": "Fast Noise",
+      "version": "1.0.39+26.2",
+      "versionType": "release",
+      "path": "mods/zfastnoise-1.0.39+26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "OnlVIpq5",
+      "versionId": "GJk7sVtP",
+      "projectUrl": "https://modrinth.com/mod/zfastnoise",
+      "versionUrl": "https://modrinth.com/mod/zfastnoise/version/GJk7sVtP",
+      "downloadUrl": "https://cdn.modrinth.com/data/OnlVIpq5/versions/GJk7sVtP/zfastnoise-1.0.39%2B26.2.jar",
+      "fileSize": 475361,
+      "hashes": {
+        "sha1": "e1772fcd422a5ca6dc139e04d9ba4edcf208b8e2",
+        "sha512": "33a6c9a9e78e8973b6b485ea3db34e04d06062daf83f3e9146e2a6111e36b68d6c08cfb3a960c0e3dcef6d7a9198d6ed7bd791886efa9fb2f7fe02c0545617f9"
+      },
+      "license": "MPL-2.0",
+      "requires": [],
+      "notes": "Stable vanilla-parity world-generation optimization; intentionally replaces Noisium."
+    },
+    {
+      "name": "Chunky",
+      "modId": "chunky",
+      "kind": "requested",
+      "requestedAs": "Chunky",
+      "version": "1.5.3",
+      "versionType": "release",
+      "path": "mods/Chunky-Fabric-1.5.3.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "fALzjamp",
+      "versionId": "4Eotm6ov",
+      "projectUrl": "https://modrinth.com/plugin/chunky",
+      "versionUrl": "https://modrinth.com/plugin/chunky/version/4Eotm6ov",
+      "downloadUrl": "https://cdn.modrinth.com/data/fALzjamp/versions/4Eotm6ov/Chunky-Fabric-1.5.3.jar",
+      "fileSize": 354095,
+      "hashes": {
+        "sha1": "fc1f2f374c5c82117599071ed18b6ef9bba2c7fb",
+        "sha512": "b83bfe7b218d0aa6232af977ae741dc1f82b10e50cd12bb759f65cf416b8b62beccb543e587ef0b9670abe03815660f8e091bc6823624d65cf07300571573516"
+      },
+      "license": "GPL-3.0-only",
+      "requires": [
+        "fabric-api"
+      ]
+    },
+    {
+      "name": "ScalableLux",
+      "modId": "scalablelux",
+      "kind": "requested",
+      "requestedAs": "ScalableLux",
+      "version": "0.2.1+fabric.2b08348",
+      "versionType": "release",
+      "path": "mods/ScalableLux-0.2.1+fabric.2b08348-all.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "Ps1zyz6x",
+      "versionId": "FuGn0NlI",
+      "projectUrl": "https://modrinth.com/mod/scalablelux",
+      "versionUrl": "https://modrinth.com/mod/scalablelux/version/FuGn0NlI",
+      "downloadUrl": "https://cdn.modrinth.com/data/Ps1zyz6x/versions/FuGn0NlI/ScalableLux-0.2.1%2Bfabric.2b08348-all.jar",
+      "fileSize": 183405,
+      "hashes": {
+        "sha1": "4f04d101866a35a50c713efec7181a33f9f657e2",
+        "sha512": "46cc3df58ad2723fb7f925da0e380e22481e15ceb0e61fbd7947f48d2902e7a67ae4d2d22df4faab4e3140ccf79aa9f59d91ec9959bd6e2afbf0fb90970a02fc"
+      },
+      "license": "LGPL-3.0-only",
+      "requires": []
+    },
+    {
+      "name": "Concurrent Chunk Management Engine",
+      "modId": "c2me",
+      "kind": "requested",
+      "requestedAs": "C2ME",
+      "version": "0.4.1-beta.1.0+26.2",
+      "versionType": "beta",
+      "path": "mods/c2me-fabric-mc26.2-0.4.1-beta.1.0.jar",
+      "env": {
+        "client": "required",
+        "server": "required"
+      },
+      "provider": "modrinth",
+      "projectId": "VSNURh3q",
+      "versionId": "hfq4dPFH",
+      "projectUrl": "https://modrinth.com/mod/c2me-fabric",
+      "versionUrl": "https://modrinth.com/mod/c2me-fabric/version/hfq4dPFH",
+      "downloadUrl": "https://cdn.modrinth.com/data/VSNURh3q/versions/hfq4dPFH/c2me-fabric-mc26.2-0.4.1-beta.1.0.jar",
+      "fileSize": 3775368,
+      "hashes": {
+        "sha1": "284370db4ccf66653de0d250f4b990f4ed41fe1f",
+        "sha512": "21076491de36c5d680cafa494116b98a134a3d7e3cbcb77a59942bab0ceacf6c9386a80b1e4d870e501aafab27b89c0b5d7a09f1392a4d4ab43a87f9d3524841"
+      },
+      "license": "MIT",
+      "requires": [],
+      "notes": "Pinned to the published 26.2 beta instead of the newer automatically uploaded alpha devbuild."
     },
     {
       "name": "Fabric API",
