@@ -2,7 +2,7 @@
 
 Воспроизводимый модпак для **Minecraft 26.2**, **Fabric Loader 0.19.3** и **Java 25**.
 
-В составе 25 пользовательских модов: 23 прямых выбора и 2 поддерживаемые замены. Ещё 7 технических зависимостей подтягиваются автоматически. Получается **32 JAR на клиенте** и **19 JAR на сервере**. JAR-файлы не хранятся в Git: сборщик скачивает зафиксированные официальные релизы и проверяет их хеши.
+В составе 25 пользовательских модов: 23 прямых выбора и 2 поддерживаемые замены. Ещё 8 технических зависимостей подтягиваются автоматически. Получается **33 JAR на клиенте** и **19 JAR на сервере**. JAR-файлы не хранятся в Git: сборщик скачивает зафиксированные официальные релизы и проверяет их хеши.
 
 ## Быстрый запуск клиента
 
@@ -135,9 +135,9 @@ Sodium Extra, Reese's Sodium Options, Iris и ModernFix намеренно не 
 Свободная камера без движения игрока.
 <br clear="left">
 
-<a href="https://github.com/MrCrayfish/Catalogue"><img src="docs/images/mods/catalogue.png" alt="Catalogue" width="48" height="48" align="left"></a>
-**[Catalogue](https://github.com/MrCrayfish/Catalogue)** · `1.12.3` · `client`<br>
-Экран списка и настроек модов.
+<a href="https://modrinth.com/mod/modmenu"><img src="https://cdn.modrinth.com/data/mOgUt4GM/icon.png" alt="Mod Menu" width="48" height="48" align="left"></a>
+**[Mod Menu](https://modrinth.com/mod/modmenu)** · `20.0.1` · `client`<br>
+Открывает настройки Bobby и других модов.
 <br clear="left">
 
 <a href="https://modrinth.com/mod/dark-paintings"><img src="https://cdn.modrinth.com/data/lFGQ4Hnk/1dd928b82ae0f65ca0d864af148f7d44875340c6.png" alt="Dark Paintings" width="48" height="48" align="left"></a>
@@ -156,10 +156,11 @@ Sodium Extra, Reese's Sodium Options, Iris и ModernFix намеренно не 
 <br clear="left">
 
 <details>
-<summary><strong>7 технических зависимостей</strong></summary>
+<summary><strong>8 технических зависимостей</strong></summary>
 
 - Fabric API
 - Cloth Config
+- Text Placeholder API
 - Fusion
 - SuperMartijn642's Core Lib
 - YetAnotherConfigLib (YACL)

@@ -1,9 +1,9 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "1.1.0+mc26.2-fabric",
+  "versionId": "1.2.0+mc26.2-fabric",
   "name": "Devformed Fabric 26.2",
-  "summary": "Minecraft 26.2 Fabric pack with 23 requested mods, 2 maintained replacements, and 7 required dependencies.",
+  "summary": "Minecraft 26.2 Fabric pack with 23 requested mods, 2 maintained replacements, and 8 required dependencies.",
   "files": [
     {
       "path": "mods/goblintraders-fabric-1.12.0+26.2-signed.jar",
@@ -141,19 +141,19 @@
       "fileSize": 1348440
     },
     {
-      "path": "mods/catalogue-fabric-1.12.3+26.2-signed.jar",
+      "path": "mods/modmenu-20.0.1.jar",
       "hashes": {
-        "sha1": "b747eea6c8f5464b9bef02f664e7c53c107ebe87",
-        "sha512": "332d54ff31888a25b625a5ad5dfe4da05f7ed72c4fb5080a44b942cd8818a303759feff1ae86dd35c6ee83cb2d1f4360e86e886ab225ce1f89417e2dcd849005"
+        "sha1": "8562dee49eae1a6bdd14b026be1b300aedb5ce0f",
+        "sha512": "1aa297ab5e6fac71ad6af750fe6f8cd25281bd00c0340e5fe1c1e9d153d1198df03be1df55727a4a2116db97dcaad541d41754f3fc0063abfe4345b60f193fb4"
       },
       "env": {
         "client": "required",
         "server": "unsupported"
       },
       "downloads": [
-        "https://github.com/MrCrayfish/Catalogue/releases/download/v1.12.3%2B26.2/catalogue-fabric-1.12.3%2B26.2-signed.jar"
+        "https://cdn.modrinth.com/data/mOgUt4GM/versions/njXb639R/modmenu-20.0.1.jar"
       ],
-      "fileSize": 316558
+      "fileSize": 614002
     },
     {
       "path": "mods/DarkPaintings-fabric-MC26.2-26.2.0.1.jar",
@@ -409,6 +409,21 @@
         "https://cdn.modrinth.com/data/9s6osm5g/versions/Nv3xnWXd/cloth-config-26.2.155.jar"
       ],
       "fileSize": 1135186
+    },
+    {
+      "path": "mods/placeholder-api-3.1.0-beta.1+26.2.jar",
+      "hashes": {
+        "sha1": "99b57ccc1d4323c4ef71887828dac25ce4ce2103",
+        "sha512": "07b6fc802559d54ec6577f6e2788926ef391d755206c2bfb0528280977885cae4bc0c517d8a53eb6f34092015ebe6c41210627d255aa6504662daefa8fb76397"
+      },
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/eXts2L7r/versions/NDqH16LT/placeholder-api-3.1.0-beta.1%2B26.2.jar"
+      ],
+      "fileSize": 254973
     },
     {
       "path": "mods/fusion-1.3.12-fabric-mc26.2.jar",

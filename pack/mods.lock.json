@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "name": "Devformed Fabric 26.2",
-  "versionId": "1.1.0+mc26.2-fabric",
-  "summary": "Minecraft 26.2 Fabric pack with 23 requested mods, 2 maintained replacements, and 7 required dependencies.",
-  "resolvedAt": "2026-08-02T08:27:11Z",
+  "versionId": "1.2.0+mc26.2-fabric",
+  "summary": "Minecraft 26.2 Fabric pack with 23 requested mods, 2 maintained replacements, and 8 required dependencies.",
+  "resolvedAt": "2026-08-02T21:10:27Z",
   "runtime": {
     "minecraft": "26.2",
     "java": 25,
@@ -14,7 +14,6 @@
     "selection": "Newest official release explicitly tagged for Minecraft 26.2 and Fabric, except publisher-marked beta builds where no stable exact build exists.",
     "distribution": "No third-party JAR is committed. The pack downloads immutable upstream artifacts and verifies hashes.",
     "optionalDependenciesExcluded": [
-      "Mod Menu",
       "Rechiseled",
       "Reliable Recipe Viewer"
     ]
@@ -22,8 +21,8 @@
   "counts": {
     "requested": 23,
     "replacements": 2,
-    "dependencies": 7,
-    "totalFiles": 32
+    "dependencies": 8,
+    "totalFiles": 33
   },
   "artifacts": [
     {
@@ -290,34 +289,35 @@
       ]
     },
     {
-      "name": "Catalogue",
-      "modId": "catalogue",
+      "name": "Mod Menu",
+      "modId": "modmenu",
       "kind": "requested",
-      "requestedAs": "Catalogue",
-      "version": "1.12.3+26.2",
+      "requestedAs": "Mod Menu",
+      "version": "20.0.1",
       "versionType": "release",
-      "path": "mods/catalogue-fabric-1.12.3+26.2-signed.jar",
+      "path": "mods/modmenu-20.0.1.jar",
       "env": {
         "client": "required",
         "server": "unsupported"
       },
-      "provider": "github",
-      "repository": "MrCrayfish/Catalogue",
-      "releaseId": 343307703,
-      "assetId": 455345090,
-      "projectUrl": "https://github.com/MrCrayfish/Catalogue",
-      "versionUrl": "https://github.com/MrCrayfish/Catalogue/releases/tag/v1.12.3%2B26.2",
-      "downloadUrl": "https://github.com/MrCrayfish/Catalogue/releases/download/v1.12.3%2B26.2/catalogue-fabric-1.12.3%2B26.2-signed.jar",
-      "fileSize": 316558,
+      "provider": "modrinth",
+      "projectId": "mOgUt4GM",
+      "versionId": "njXb639R",
+      "projectUrl": "https://modrinth.com/mod/modmenu",
+      "versionUrl": "https://modrinth.com/mod/modmenu/version/njXb639R",
+      "downloadUrl": "https://cdn.modrinth.com/data/mOgUt4GM/versions/njXb639R/modmenu-20.0.1.jar",
+      "fileSize": 614002,
       "hashes": {
-        "sha1": "b747eea6c8f5464b9bef02f664e7c53c107ebe87",
-        "sha256": "d228ef91ff501a860b22f96e240a3b1b32e93b0c81c2d02deca7c37b7972e2b3",
-        "sha512": "332d54ff31888a25b625a5ad5dfe4da05f7ed72c4fb5080a44b942cd8818a303759feff1ae86dd35c6ee83cb2d1f4360e86e886ab225ce1f89417e2dcd849005"
+        "sha1": "8562dee49eae1a6bdd14b026be1b300aedb5ce0f",
+        "sha256": "81bfbca06012c57c74949072f2ffaad06360badee4d00dc59bfaeac80dd24bd8",
+        "sha512": "1aa297ab5e6fac71ad6af750fe6f8cd25281bd00c0340e5fe1c1e9d153d1198df03be1df55727a4a2116db97dcaad541d41754f3fc0063abfe4345b60f193fb4"
       },
       "license": "MIT",
       "requires": [
-        "fabric-api"
-      ]
+        "fabric-api",
+        "placeholder-api"
+      ],
+      "notes": "Replaces Catalogue because Bobby and several other installed mods expose their configuration screens through the Mod Menu API."
     },
     {
       "name": "Dark Paintings",
@@ -784,6 +784,33 @@
       "license": "LGPL-3.0-only",
       "requires": [],
       "reason": "Falling Leaves accepts any Cloth Config version; this is the sole Fabric 26.2 release and matches Freecam's embedded copy byte-for-byte."
+    },
+    {
+      "name": "Text Placeholder API",
+      "modId": "placeholder-api",
+      "kind": "dependency",
+      "version": "3.1.0-beta.1+26.2",
+      "versionType": "release",
+      "path": "mods/placeholder-api-3.1.0-beta.1+26.2.jar",
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "provider": "modrinth",
+      "projectId": "eXts2L7r",
+      "versionId": "NDqH16LT",
+      "projectUrl": "https://modrinth.com/mod/placeholder-api",
+      "versionUrl": "https://modrinth.com/mod/placeholder-api/version/NDqH16LT",
+      "downloadUrl": "https://cdn.modrinth.com/data/eXts2L7r/versions/NDqH16LT/placeholder-api-3.1.0-beta.1%2B26.2.jar",
+      "fileSize": 254973,
+      "hashes": {
+        "sha1": "99b57ccc1d4323c4ef71887828dac25ce4ce2103",
+        "sha256": "c2ca2b5c397a0c198a32e7af68d2d0a011bc2c7baeae5cffd3996efd65c5069e",
+        "sha512": "07b6fc802559d54ec6577f6e2788926ef391d755206c2bfb0528280977885cae4bc0c517d8a53eb6f34092015ebe6c41210627d255aa6504662daefa8fb76397"
+      },
+      "license": "LGPL-3.0-only",
+      "requires": [],
+      "reason": "Required by Mod Menu 20.0.1."
     },
     {
       "name": "Fusion (Connected Textures)",
